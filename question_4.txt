@@ -1,0 +1,25 @@
+Explain how you would make a copy of our production codebase 
+so that you can begin developing a new feature from a project plan 
+and how you would share your work with the world as production software.  
+Please use exact commands for starting your work, preparing for review, and getting it deployed.
+
+Assuming ticket has been made for this feature in jira
+Use Tower connected to bitbucket cloud
+save to local folder
+install dependencies (composer install / npm install)
+create feature branch
+do work
+run all tests
+double check work
+depending on ticket size, make digestable commits
+push changes to bitbucket
+create ticket pr
+message team (slack) with link to pr
+once approved by more than one peer, merge into master
+deploy to dev server
+check everything over
+make pr to deploy to test server
+once approved, deploy to test
+check everything
+make pr to deploy to production
+send pr to team lead

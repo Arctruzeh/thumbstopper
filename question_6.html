@@ -1,0 +1,28 @@
+<!-- 
+    In Javascript and html5, write a simple web form that has a text field that is labeled “new button text” button that says “Click Me”.  
+    When you click the button, it should change the button’s internal text to say whatever was in the text input above. 
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" value="new button text" id="inputId">
+    <button type="button" onclick="getInputValue();" id="buttonId">Click Me</button>
+
+    <script>
+        function getInputValue() {
+            let inputVal = document.getElementById("inputId").value
+            document.getElementById("buttonId").innerHTML = inputVal
+        }
+    </script>
+</body>
+
+</html>

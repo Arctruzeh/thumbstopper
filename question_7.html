@@ -1,0 +1,72 @@
+<!-- 
+    Using your form from question 6, Create CSS to change the look of your form utilizing our corporate colors.  
+    This stylesheet must include reference to . and #.  
+    Share the new form and style sheet.
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: rgb(80, 0, 184);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #inputId {
+            background-color: rgb(245, 248, 250);
+            font-size: 15px;
+            line-height: 22px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 12px 24px;
+            color: rgb(51, 71, 91);
+            border: none;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        #buttonId {
+            background-color: rgb(232, 0, 97);
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 22px;
+            font-family: 'Rubik', sans-serif;
+            padding: 12px 24px;
+            color: rgb(255, 255, 255);
+            border: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" value="new button text" id="inputId">
+        <button type="button" onclick="getInputValue();" id="buttonId">Click Me</button>
+    </div>
+
+    <script>
+        function getInputValue() {
+            let inputVal = document.getElementById("inputId").value;
+            document.getElementById("buttonId").innerHTML = inputVal
+        }
+    </script>
+</body>
+
+</html>

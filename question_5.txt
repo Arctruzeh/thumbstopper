@@ -1,0 +1,6 @@
+Your job is to show a list of numbers 1 - 10. 
+If you wanted to put these names in span tags, how would you write this in Vue (preferred) / react / similar?
+
+I made the example in codesandbox.
+
+https://codesandbox.io/s/gu7ch
